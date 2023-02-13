@@ -18,7 +18,7 @@ export default function Home({ data }: PageProps<InvoiceRecord[] | null>) {
   return (
     <>
       <Head>
-        <title>Customer List</title>
+        <title>Customer List new </title>
       </Head>
       <div class="p-4 mx-auto max-w-screen-md">
         <h1 class="text-xl pb-4">Customer names</h1>
