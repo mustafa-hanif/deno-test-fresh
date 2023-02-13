@@ -7,7 +7,7 @@ import type {
 } from "https://cdn.skypack.dev/@xata.io/client?dts";
 
 import { config } from "https://deno.land/x/dotenv@v3.2.0/mod.ts";
-
+const XATA_API_KEY = Deno.env.get("XATA_API_KEY") ?? config().XATA_API_KEY;
 
 const tables = [
   { name: "invoice", columns: [{ name: "customer", type: "string" }] },
@@ -42,7 +42,7 @@ export const getXataClient = () => {
   if (instance) return instance;
 
   instance = new XataClient({
-    apiKey: config().XATA_API_KEY,
+    apiKey: XATA_API_KEY,
   });
   return instance;
 };
