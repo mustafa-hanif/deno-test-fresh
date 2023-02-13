@@ -1,0 +1,7 @@
+{
+  "databaseURL": "https://Mustafa-Hanif-s-workspace-d4pmcv.eu-west-1.xata.sh/db/deno-test",
+  "codegen": {
+    "output": "src/xata.ts",
+    "moduleType": "deno"
+  }
+}
