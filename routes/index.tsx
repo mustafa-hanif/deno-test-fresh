@@ -21,7 +21,7 @@ export default function Home({ data }: PageProps<InvoiceRecord[] | null>) {
         <title>Customer List new </title>
       </Head>
       <div class="p-4 mx-auto max-w-screen-md">
-        <h1 class="text-xl pb-4">Customer names</h1>
+        <h1 class="text-xl pb-4">Customer New ja names</h1>
         {data.map((record) => (
           <div key={record.id}>
             <h1>{record.customer}</h1>
